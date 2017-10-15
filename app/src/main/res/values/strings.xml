@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Git sample</string>
+    <string name="user_name">User name</string>
+    <string name="user_password">Password</string>
+    <string name="log_in">Login</string>
+    <string name="password_error">Password Error</string>
+    <string name="username_error">Username Error</string>
 </resources>
