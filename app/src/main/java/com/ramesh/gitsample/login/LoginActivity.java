@@ -7,9 +7,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.ramesh.gitsample.R;
-import com.ramesh.gitsample.login.LoginPresenter;
-import com.ramesh.gitsample.login.LoginPresenterImpl;
-import com.ramesh.gitsample.login.LoginView;
 
 public class LoginActivity extends AppCompatActivity implements LoginView, View.OnClickListener {
 
@@ -29,6 +26,11 @@ public class LoginActivity extends AppCompatActivity implements LoginView, View.
         findViewById(R.id.button).setOnClickListener(this);
 
         presenter = new LoginPresenterImpl(this);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     @Override
