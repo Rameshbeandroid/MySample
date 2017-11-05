@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Gitsample.iml" filepath="$PROJECT_DIR$/Gitsample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MySample.iml" filepath="$PROJECT_DIR$/MySample.iml" />
+      <module fileurl="file://E:\MySample\Gitsample.iml" filepath="E:\MySample\Gitsample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MySample.iml" filepath="$PROJECT_DIR$/.idea/MySample.iml" />
+      <module fileurl="file://E:\MySample\MySample.iml" filepath="E:\MySample\MySample.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\MySample\app\app.iml" filepath="E:\MySample\app\app.iml" />
     </modules>
   </component>
 </project>
