@@ -11,7 +11,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import javax.inject.Inject;
 
-public class LoginActivity extends AppCompatActivity implements LoginView {
+public class LoginActivity extends AppCompatActivity  {
 
   private EditText etuserName;
   private EditText etPassWord;
@@ -20,7 +20,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    AndroidInjection.inject(this);
     setContentView(R.layout.activity_login);
     intiUIElement();
 
@@ -31,13 +30,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     btSingIn = (Button) findViewById(R.id.bt_sign_in);
   }
 
-  @Override public void onUserNameEmpty() {
 
-  }
-
-  @Override public void onPasswordEmpty() {
-
-  }
 
   @Override protected void onResume() {
     super.onResume();
