@@ -6,17 +6,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.ramesh.gitsample.R;
 import com.squareup.sqlbrite3.BriteDatabase;
+import dagger.android.AndroidInjection;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import javax.inject.Inject;
 
-public class LoginActivity extends AppCompatActivity implements LoginView {
+public class LoginActivity extends AppCompatActivity  {
 
   private EditText etuserName;
   private EditText etPassWord;
   private Button btSingIn;
-  @Inject BriteDatabase db;
-  private Disposable disposable;
+
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -30,13 +30,7 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
     btSingIn = (Button) findViewById(R.id.bt_sign_in);
   }
 
-  @Override public void onUserNameEmpty() {
 
-  }
-
-  @Override public void onPasswordEmpty() {
-
-  }
 
   @Override protected void onResume() {
     super.onResume();
