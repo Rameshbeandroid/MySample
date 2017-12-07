@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import com.ramesh.gitsample.R;
 import com.squareup.sqlbrite3.BriteDatabase;
+import dagger.android.AndroidInjection;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import javax.inject.Inject;
@@ -15,11 +16,11 @@ public class LoginActivity extends AppCompatActivity implements LoginView {
   private EditText etuserName;
   private EditText etPassWord;
   private Button btSingIn;
-  @Inject BriteDatabase db;
-  private Disposable disposable;
+
 
   @Override protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    AndroidInjection.inject(this);
     setContentView(R.layout.activity_login);
     intiUIElement();
 
