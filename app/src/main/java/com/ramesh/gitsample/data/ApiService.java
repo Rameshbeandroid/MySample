@@ -1,4 +1,4 @@
-package com.ramesh.gitsample.api;
+package com.ramesh.gitsample.data;
 
 /**
  * Created by lencare on 05-Dec-17.

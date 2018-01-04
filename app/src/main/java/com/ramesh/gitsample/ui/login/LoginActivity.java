@@ -1,4 +1,4 @@
-package com.ramesh.gitsample.ui;
+package com.ramesh.gitsample.ui.login;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
