@@ -6,25 +6,7 @@
     android:orientation="vertical"
     >
 
-  <EditText
-      android:hint="User name"
-      android:id="@+id/et_user_name"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      />
 
-  <EditText
-      android:hint="Password"
-      android:id="@+id/et_user_pass_word"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      />
-  <Button
-      android:text="Sign-in"
-      android:id="@+id/bt_sign_in"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      />
 
 
 </LinearLayout>
