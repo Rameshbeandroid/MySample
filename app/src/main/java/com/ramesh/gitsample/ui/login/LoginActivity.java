@@ -8,6 +8,8 @@ import butterknife.BindView;
 import butterknife.OnClick;
 import com.ramesh.gitsample.R;
 import com.ramesh.gitsample.base.BaseActivity;
+import io.reactivex.Observable;
+import io.reactivex.functions.Predicate;
 
 public class LoginActivity extends BaseActivity<LoginPresenter> implements LoginView {
 
@@ -24,7 +26,6 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
     super.onCreate(savedInstanceState);
     Log.d("LogTrack", " : onCreate() ");
     bindLayout(R.layout.activity_login);
-
   }
 
   @Override protected void onResume() {
@@ -35,7 +36,13 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
   @OnClick() public void btUserLogin() {
     String userName = etUserName.getText().toString();
     String userPassword = etPassword.getText().toString();
-    presenter.loginRequest(userName,userPassword);
+    presenter.loginRequest(userName, userPassword);
+
+    Observable.just(1, 2, 3, 4, 5).filter(new Predicate<Integer>() {
+      @Override public boolean test(Integer integer) throws Exception {
+        return integer % 2 == 0;
+      }
+    });
   }
 
   @Override public void onSuccess(Object model) {
