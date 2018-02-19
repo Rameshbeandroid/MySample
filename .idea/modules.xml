@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://E:\Learning\MySample\.idea\MySample.iml" filepath="E:\Learning\MySample\.idea\MySample.iml" />
-      <module fileurl="file://E:\Learning\Sample MVP\.idea\MySample.iml" filepath="E:\Learning\Sample MVP\.idea\MySample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Sample MVP.iml" filepath="$PROJECT_DIR$/.idea/Sample MVP.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://E:\Learning\MySample\app\app.iml" filepath="E:\Learning\MySample\app\app.iml" />
     </modules>
   </component>
 </project>
