@@ -1,7 +1,7 @@
 package com.ramesh.gitsample;
 
 import android.app.Application;
-import com.ramesh.gitsample.di.component.ApiComponent;
+import com.ramesh.gitsample.di.ApiComponent;
 import com.ramesh.gitsample.di.ApiModule;
 import com.ramesh.gitsample.di.AppModule;
 import com.ramesh.gitsample.di.DaggerApiComponent;
