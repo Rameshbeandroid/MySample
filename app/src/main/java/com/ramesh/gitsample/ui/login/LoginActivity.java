@@ -9,6 +9,7 @@ import butterknife.BindView;
 import com.ramesh.gitsample.AppClass;
 import com.ramesh.gitsample.R;
 import com.ramesh.gitsample.base.BaseActivity;
+import com.ramesh.gitsample.data.local.db.DataManager;
 import com.ramesh.gitsample.data.local.prefs.SharedPrefsHelper;
 import com.ramesh.gitsample.data.model.Hero;
 import java.util.List;
@@ -23,6 +24,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
   @Inject Retrofit retrofit;
   @Inject SharedPrefsHelper mSharedPrefsHelper;
+  @Inject DataManager dataManager;
 
   @Override public LoginPresenter intPresenter() {
     Log.d("LogTrack", " : LoginPresenter() ");
