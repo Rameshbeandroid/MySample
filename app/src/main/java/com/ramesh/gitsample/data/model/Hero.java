@@ -8,7 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Hero {
 
-  @SerializedName("name") private String name;
+  @SerializedName("name")
+  private String name;
   private String realname;
   private String team;
   private String firstappearance;

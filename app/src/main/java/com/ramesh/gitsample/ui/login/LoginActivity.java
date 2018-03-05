@@ -9,16 +9,20 @@ import butterknife.BindView;
 import com.ramesh.gitsample.AppClass;
 import com.ramesh.gitsample.R;
 import com.ramesh.gitsample.base.BaseActivity;
+import com.ramesh.gitsample.data.local.prefs.SharedPrefsHelper;
 import com.ramesh.gitsample.data.model.Hero;
 import java.util.List;
 import javax.inject.Inject;
 import retrofit2.Retrofit;
+
+import static com.ramesh.gitsample.data.local.prefs.SharedPrefsHelper.PREF_KEY_ACCESS_TOKEN;
 
 public class LoginActivity extends BaseActivity<LoginPresenter> implements LoginView {
 
   @BindView(R.id.lstv_heros) ListView listView;
 
   @Inject Retrofit retrofit;
+  @Inject SharedPrefsHelper mSharedPrefsHelper;
 
   @Override public LoginPresenter intPresenter() {
     Log.d("LogTrack", " : LoginPresenter() ");
@@ -33,6 +37,8 @@ public class LoginActivity extends BaseActivity<LoginPresenter> implements Login
 
   @Override protected void onResume() {
     super.onResume();
+
+    Log.d("RAMESHSAMPLE"," :::::::: "+mSharedPrefsHelper.get(PREF_KEY_ACCESS_TOKEN,null));
     presenter.getHero(retrofit);
   }
 

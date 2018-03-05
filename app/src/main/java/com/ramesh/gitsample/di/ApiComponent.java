@@ -14,5 +14,4 @@ public interface ApiComponent {
 
   void inject(LoginActivity loginActivity);
 
-  void inject(LoginPresenter loginPresenter);
 }
